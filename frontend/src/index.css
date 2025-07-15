@@ -1,0 +1,100 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 221 100% 3%; /* rich-black */
+    --foreground: 0 0% 100%; /* white for all text */
+
+    --card: 207 100% 12%; /* oxford-blue */
+    --card-foreground: 0 0% 100%; /* white for card text */
+
+    --popover: 207 100% 12%; /* oxford-blue */
+    --popover-foreground: 0 0% 100%; /* white */
+
+    --primary: 45 100% 50%; /* mikado-yellow */
+    --primary-foreground: 0 0% 100%; /* white text on primary */
+
+    --secondary: 207 100% 20%; /* yale-blue */
+    --secondary-foreground: 0 0% 100%; /* white */
+
+    --muted: 207 100% 20%; /* yale-blue */
+    --muted-foreground: 0 0% 100%; /* white */
+
+    --accent: 48 100% 53%; /* gold - for highlights only */
+    --accent-foreground: 0 0% 100%; /* white text */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%; /* white */
+
+    --border: 207 100% 20%; /* yale-blue */
+    --input: 207 100% 20%; /* yale-blue */
+    --ring: 48 100% 53%; /* gold for focus rings */
+    
+    --sidebar-background: 207 100% 12%; /* oxford-blue */
+    --sidebar-foreground: 0 0% 100%; /* white */
+    --sidebar-primary: 45 100% 50%; /* mikado-yellow */
+    --sidebar-primary-foreground: 0 0% 100%; /* white */
+    --sidebar-accent: 207 100% 20%; /* yale-blue */
+    --sidebar-accent-foreground: 0 0% 100%; /* white */
+    --sidebar-border: 207 100% 20%; /* yale-blue */
+    --sidebar-ring: 48 100% 53%; /* gold */
+
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 221 100% 3%; /* dark background for contrast with white text */
+    --foreground: 0 0% 100%; /* white text */
+
+    --card: 207 100% 12%; /* dark cards for contrast */
+    --card-foreground: 0 0% 100%; /* white text on cards */
+
+    --popover: 207 100% 12%; /* dark popover */
+    --popover-foreground: 0 0% 100%; /* white text */
+
+    --primary: 45 100% 50%; /* mikado-yellow */
+    --primary-foreground: 0 0% 100%; /* white text on primary */
+
+    --secondary: 207 100% 20%; /* dark secondary */
+    --secondary-foreground: 0 0% 100%; /* white text */
+
+    --muted: 207 100% 20%; /* dark muted */
+    --muted-foreground: 0 0% 100%; /* white text */
+
+    --accent: 48 100% 53%; /* gold - for highlights only */
+    --accent-foreground: 0 0% 100%; /* white text */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%; /* white text */
+
+    --border: 207 100% 20%; /* dark border */
+    --input: 207 100% 20%; /* dark input */
+    --ring: 45 100% 50%; /* mikado-yellow for focus */
+
+    --sidebar-background: 207 100% 12%; /* dark sidebar */
+    --sidebar-foreground: 0 0% 100%; /* white text */
+    --sidebar-primary: 45 100% 50%; /* mikado-yellow */
+    --sidebar-primary-foreground: 0 0% 100%; /* white text */
+    --sidebar-accent: 207 100% 20%; /* dark accent */
+    --sidebar-accent-foreground: 0 0% 100%; /* white text */
+    --sidebar-border: 207 100% 20%; /* dark border */
+    --sidebar-ring: 45 100% 50%; /* mikado-yellow */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
