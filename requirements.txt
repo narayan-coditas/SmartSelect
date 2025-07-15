@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+sqlalchemy
+mysql-connector-python
+python-dotenv
+openai
+groq
+faiss-cpu
+sentence-transformers
