@@ -1,18 +1,61 @@
-# Ignore environment files
-.env
-*.env
-
-# Ignore virtual environment folder
-.venv/
-venv/
-
-# Ignore __pycache__ and other cache
+# === Python ===
 __pycache__/
 *.py[cod]
-*.sqlite3
-*.pkl
-*.log
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg-info/
+*.eggs/
+*.manifest
+*.spec
 
-# VSCode or PyCharm specific
-.vscode/
+# === Environment ===
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# === FastAPI Static Uploads ===
+uploaded_resumes/
+
+# === IDEs & Editor Configs ===
 .idea/
+.vscode/
+*.swp
+*.swo
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Logs & DB ===
+*.log
+*.db
+*.sqlite3
+resumes.db
+
+# === FAISS index ===
+faiss_index.pkl
+
+# === Node / Vite (Frontend) ===
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# === Dependency Lock Files ===
+# (optional: include if you're not using lock files)
+poetry.lock
+Pipfile.lock
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# === Other ===
+*.bak
+*.tmp
+*.orig
